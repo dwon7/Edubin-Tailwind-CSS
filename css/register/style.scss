@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+$color_blue1 : #07294d;
+$color_yellow : #ffc600;
+$color_white1 : #edf0f2;
+$color_blue2 : #24486e;
+$color_gray : #8a8a8a;
+$color_blue3 : #021d3a;
+$color_white2 : #c6c6c6;
+$color_blue4 : #092e56;
+
+
+#header-part {
+    width: 100%;
+    .header-top {
+        background-color: $color_blue1;
+        .container{
+            width: 1200px;
+            .header-contact{
+                ul{
+                    li{
+                        display: inline-block;
+                        color: $color_white1;
+                        margin-right: 20px;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                }
+                
+            }
+
+            .header-right{
+               .social{
+                    ul{
+                        li{
+                            color: $color_white1;
+                            padding: 0 5px;
+                        }
+                    }
+               }
+
+               .login-register{
+                    ul{
+                        li{
+                            color: $color_yellow;
+                            margin-left: 25px;
+                        }
+                    }
+               }
+            }
+        }   
+
+          
+    }
+
+    .navigation{
+        .container {
+            width: 1200px;
+
+            .sub-nav{
+                ul {
+                    li{
+                        padding: 0 15px;
+                        
+                        a{
+                            transition: all 0.4s linear;
+                        }
+                        
+                        ul{
+                            
+                            li{
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-banner::after{
+    content: "";
+    display: block;
+    width: 1000%;
+    height: 100%;
+    background-color: $color_blue1;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+} 
+
+.page-banner > * {
+    z-index: 10;
+    position: relative;
+}
+
+.page-banner{
+    background-image: url('../../images/image_icon/page-banner-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .container{
+        width: 1200px;
+    }
+    
+}
+
+
+.signup{
+    background-color: $color_white1;
+
+    .container{
+        width: 1200px;
+
+        .col{
+            
+            .signup-cont{
+
+                .signup-form{
+                    .form-group{
+                        margin-bottom: 20px;
+                        .form-input{
+                            outline: auto $color_gray;
+                        }
+
+                        .label-agree-term{
+                            color: gray;
+
+                            .term-service{
+                                color: #000;
+                            }
+
+                            .term-service:hover{
+                                color: $color_yellow;
+                            }
+                        }
+
+                        .submit-btn{
+                            display: inline-block;
+                            border: 1px solid $color_yellow;
+                            padding: 5px 35px;
+                            border-radius: 5px;
+                            color: $color_blue1;
+                            cursor: pointer;
+                            position: relative;
+                            overflow: hidden;
+                            z-index: 5;
+                            transition: 0.4s ease-in-out;
+                            background-color: $color_yellow;
+                        }
+
+                        .submit-btn:hover{
+                            color: $color_yellow;
+                            background-color: $color_blue1;
+                        }
+                    }
+
+                }
+                .loginhere{
+                    color: $color_gray;
+
+                    .loginhere-link{
+                        color: $color_blue1;
+                    }
+
+                    .loginhere-link:hover{
+                        color: $color_yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.footer-part{
+
+    .footer-top{
+        background-color: $color_blue1;
+
+        .container{
+            width: 1200px;
+
+            .row{
+
+                .col-1{
+                    
+                    .footer-about{
+
+                        ul{
+
+                            li{
+                                width: 35px;
+                                height: 35px;
+                                background-color: $color_blue3;
+                                border-radius: 50%;
+                                text-align: center;
+                                line-height: 35px;
+                                color: #fff;
+                                margin-right: 15px;
+                            }
+
+                            li:hover{
+                                color: $color_blue1;
+                                background-color: $color_yellow;
+                            }
+                        }
+                    }
+                }
+
+                .col-2{
+
+                    .sitemap{
+
+                        .footer-nav{
+
+                            ul{
+                                
+                                li{
+                                    line-height: 35px;
+
+                                    a{
+                                        color: #fff;
+                                        font-size: 15px;
+
+                                        i{
+                                            color: $color_yellow;
+                                            margin-right: 8px;
+                                        }
+                                    }
+
+                                    a:hover{
+                                        color: $color_yellow;
+                                        i{
+                                            margin-right: 15px;
+                                            transition: all 0.4s linear;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .col-3{
+
+                    .support{
+
+                        ul{
+                                
+                            li{
+                                line-height: 35px;
+
+                                a{
+                                    color: #fff;
+                                    font-size: 15px;
+
+                                    i{
+                                        color: $color_yellow;
+                                        margin-right: 8px;
+                                    }
+                                }
+
+                                a:hover{
+                                    color: $color_yellow;
+                                    i{
+                                        margin-right: 15px;
+                                        transition: all 0.4s linear;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .col-4{
+                    
+                    .footer-address{
+
+                        ul{
+
+                            li{
+                                margin-bottom: 10px;
+
+                                .icon{
+                                    font-size: 18px;
+                                    color: $color_yellow;
+                                }
+
+                                .cont{
+                                    padding-left: 35px;
+
+                                    p{
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom{
+        background-color: $color_blue3;
+
+        .container{
+            width: 1200px;
+
+        }
+    }
+}
+
+
+.back-to-back{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    background-color: $color_yellow;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 5px;
+    z-index: 99;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.back-to-back:hover{
+    color: $color_yellow;
+    background-color: $color_blue1;
+}
